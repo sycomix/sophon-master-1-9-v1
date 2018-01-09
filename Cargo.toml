@@ -1,0 +1,19 @@
+[package]
+description = "Sophon built-in dapps."
+name = "sophon-ui-old-precompiled"
+version = "1.9.0"
+license = "GPL-3.0"
+authors = ["Sophon Technologies <admin@sophon.io>"]
+build = "build.rs"
+
+[features]
+default = ["with-syntex", "use-precompiled-js"]
+use-precompiled-js = ["sophon-dapps-glue/use-precompiled-js"]
+with-syntex = ["sophon-dapps-glue/with-syntex"]
+
+[build-dependencies]
+sophon-dapps-glue = "1.9"
+
+[dependencies]
+sophon-dapps-glue = "1.9"
+
